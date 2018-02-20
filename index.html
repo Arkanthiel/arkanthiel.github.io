@@ -1,86 +1,76 @@
-<!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Arkanthiel</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body class="landing">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Welcome, Arkanthiel</title>
+<link rel="stylesheet" href="StartPage_files/style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="StartPage_files/jquery.js"></script>
+<link href="StartPage_files/css.css" rel="stylesheet" type="text/css"> <!-- Downloads the desired font -->
+</head>
+<body>
+<ul class="container">
+        <li class="search"><form method="get" action="http://www.google.com/search" target="_blank">
+      <input maxlength="250" name="lmao" size="40" placeholder="Search Google" type="text"></form></li>
+        <!-- Start Dropdown -->
+        <li><a class="parent" href="#">Essentials</a> <!-- Section title -->
+                <ul class="submenu" style="display: none;"> <!-- Links Start -->
+                        <li><a class="tab" href="http://facebook.com/">Facebook</a></li>
+                        <li><a class="tab" href="https://mail.mineski.net">Work Email</a></li>
+                        <li><a class="tab" href="https://mail.google.com">Personal Emails</a></li>
+                        <li><a class="tab" href="https://youtube.com/">Youtube</a></li>
+                </ul> <!-- Links End -->
+        </li>
+        <!-- End Dropdown Section
+        <li><a class="parent" href="#">Technology &amp; Science</a>
+                <ul class="submenu" style="display: none;">
+                        <li><a class="tab" href="http://www.codepen.io/">CodePen</a></li>
+                        <li><a class="tab" href="http://www.codeacademy.com/">Codeacademy</a></li>
+                        <li><a class="tab" href="http://www.github.com/">Github</a></li>
+                        <li><a class="tab" href="http://www.lifehacker.co.uk/">Lifehacker UK</a></li>
+                        <li><a class="tab" href="http://www.livescience.com/">Live Science</a></li>
+                        <li><a class="tab" href="https://www.newscientist.com/">New Scientist</a></li>
+                        <li><a class="tab" href="http://www.stackoverflow.com/">Stack Overflow</a></li>
+                        <li><a class="tab" href="http://www.stuff.tv/">Stuff</a></li>
+                        <li><a class="tab" href="http://www.wired.co.uk/">Wired UK</a></li>
+                        <li><a class="tab" href="http://www.wired.com/">Wired US</a></li>
+                </ul>
+        </li> -->
+        <li><a class="parent" href="#">Reddit</a>
+                <ul class="submenu" style="display: none;">
+                        <li><a class="tab" href="https://www.reddit.com">Main Page</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/starcraft">Starcraft</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/Nayeon">Best Girl</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/aiyu">Best Goddess</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/Twice">Twice</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/red_velvet">Red Velvet</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/blackpink">BlackPink</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/kpopfap">????</a></li>
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Drives</a>
+                <ul class="submenu" style="display: none;">
+                        <li><a class="tab" href="http://bit.ly/gfriendmski">GFriend</a></li>
+                        <li><a class="tab" href="http:///bit.ly/METPPGL">PPGL</a></li>
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Misc</a>
+                <ul class="submenu" style="display: none;">
+                        <li><a class="tab" href="https://www.dropbox.com/">Dropbox</a></li>
+                        <li><a class="tab" href="https://drive.google.com/drive">Google Drive</a></li>
+                        <li><a class="tab" href="https://interfacelift.com/wallpaper/downloads/date/any/">InterfaceLIFT</a></li>
+                        <li><a class="tab" href="https://mega.co.nz/">MEGA</a></li>
+                        <li><a class="tab" href="http://cupcake.nilssonlee.se/">Nilsson Lee Cupcake</a></li>
+                        <li><a class="tab" href="http://pastebin.com/">Pastebin</a></li>
+                </ul>
+        </li>
+</ul>
 
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Arkanthiel</a></h1>
-				</header>
+<script>
+$('.submenu').hide();
+$("li:has(ul)").click(function(){
+$("ul",this).slideToggle('200');
+});
+</script>
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>Arkanthiel</h2>
-							<p>is still under construction!</p>
-						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
 
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>Judes is</h2>
-										<p> a Content Creator.</p>
-									</header>
-								</div>
-								<div class="4u 12u$(medium)">
-									<p>He loves going around and talking about his interests.</p>
-									<p>and has done so through eSports.</p>
-								</div>
-								<div class="4u$ 12u$(medium)">
-																	</div>
-							</div>
-						</div>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</section>
-		<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="http://www.twitter.com/arkanthiel" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="http://www.facebook.com/arkanthiel" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="http://www.instagram.com/arkanthiel" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="arkanthiel@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Arkanthiel. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</body></html>
