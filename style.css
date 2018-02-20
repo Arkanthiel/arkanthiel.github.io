@@ -6,7 +6,7 @@ html
 }
 body
 {
-        background: url('bg.png');
+        background: url('index_files/bg.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: 'Questrial', sans-serif; /* Applies the font you reference in the HTML */
